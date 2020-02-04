@@ -1,0 +1,24 @@
+#
+# Java 11 feature
+#
+blueprint-feature.java11: java11
+blueprint-deps.java11: \
+    com.sun.activation:javax.activation:1.2.0,\
+    javax.xml.bind:jaxb-api:2.3.1,\
+    com.sun.xml.bind:jaxb-core:2.3.0.1,\
+    com.sun.xml.bind:jaxb-impl:2.3.1
+
+-runbundles.java11: \
+    ${if;(runfeaturesMerged[]=java11); \
+        com.sun.activation.javax.activation,\
+        com.sun.xml.bind.jaxb-core,\
+        com.sun.xml.bind.jaxb-impl,\
+        jaxb-api \
+    }
+
+-runvm.java11: \
+    ${if;(runfeaturesMerged[]=java11); \
+        --add-opens=java.base/java.lang=ALL-UNNAMED, \
+        --add-opens=java.base/java.net=ALL-UNNAMED, \
+        --add-opens=java.base/java.security=ALL-UNNAMED \
+    }

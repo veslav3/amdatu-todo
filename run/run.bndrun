@@ -1,0 +1,7 @@
+-runfw: org.apache.felix.framework
+
+-runfeatures: web
+-runbundles: org.amdatu.tutorial.todo.api, org.amdatu.tutorial.todo.app, org.amdatu.tutorial.todo.memory
+
+-runproperties: \
+	org.ops4j.pax.logging.DefaultServiceLog.level=WARN

@@ -1,0 +1,15 @@
+#
+# Use this file to customize the bnd workspace
+#
+javac.source: 1.8
+javac.target: 1.8
+
+# Default build features (will be enabled for all projects in the workspace)
+-buildfeatures: base
+
+# Repository for project specific additional dependencies (using project-deps.maven )
+-plugin.ProjectDependencies: \
+  aQute.bnd.repository.maven.provider.MavenBndRepository; \
+        releaseUrl=${amdatu-blueprint-maven-releaseUrls}; \
+        index=${build}/project-deps.maven; \
+        name=Project dependencies

@@ -1,0 +1,16 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:${bnd_version}"
+        classpath "gradle.plugin.org.amdatu.blueprint:org.amdatu.blueprint.gradle:${blueprint_gradle_version}"
+    }
+}
+
+
+apply plugin: 'biz.aQute.bnd.workspace'
+apply plugin: "org.amdatu.blueprint"

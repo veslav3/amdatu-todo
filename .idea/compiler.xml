@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <bytecodeTargetLevel target="8">
+      <module name="org.amdatu.tutorial.todo.api" target="8" />
+      <module name="org.amdatu.tutorial.todo.app" target="8" />
+      <module name="org.amdatu.tutorial.todo.memory" target="8" />
+      <module name="run" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="DEPRECATION" value="false" />
+  </component>
+</project>

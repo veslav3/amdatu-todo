@@ -1,0 +1,14 @@
+-include: \
+	../features/blueprint/Bari/base.bnd,\
+	../features/blueprint/Bari/blobstores.bnd,\
+	../features/blueprint/Bari/config.bnd,\
+	../features/blueprint/Bari/email.bnd,\
+	../features/blueprint/Bari/java11.bnd,\
+	../features/blueprint/Bari/mongodb.bnd,\
+	../features/blueprint/Bari/scheduling.bnd,\
+	../features/blueprint/Bari/security.bnd,\
+	../features/blueprint/Bari/shell.bnd,\
+	../features/blueprint/Bari/template.bnd,\
+	../features/blueprint/Bari/testing.bnd,\
+	../features/blueprint/Bari/validator.bnd,\
+	../features/blueprint/Bari/web.bnd
